@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="searchStyles.css">
+    <script src="search.js" type="module" defer></script>
+    <script src="createTitle.js" type="module" defer></script>
+    <title>Search country information</title>
+</head>
+<body>
+<header>
+    <div class="canvas-div">
+        <canvas id="title" width="1500" height="900"></canvas>
+    </div>
+</header>
+
+<main>
+    <form id="search-a-country" class="search-form">
+        <button class="search-button" type="submit" id="submitButton">Search</button>
+        <label for="inputField">
+            <input class="search-field" type="text" id="inputField" autocomplete="off" placeholder="search a country">
+        </label>
+        <div id="holder">
+            <div class="reset-button-div">
+                <button class="reset-button" id="reset-button" type="button">Reset</button>
+                    <div class="reset-button-inner-div">
+                        <p class="reset-button-text">Are you sure?</p>
+                    </div>
+            </div>
+        </div>
+    </form>
+</main>
+    <ul id="result" class="search-result"></ul>
+</body>
+</html>

@@ -6,8 +6,40 @@ body {
 }
 
 header {
+  flex-direction: column;
   justify-content: center;
   display: flex;
+}
+
+.search-button {
+  color: #4e16e7;
+  width: 7em;
+  background-color: #0ceaec;
+  border-style: none;
+  border-radius: 2em;
+  align-self: center;
+  padding: 1em;
+  font-family: Bruno Ace SC, cursive;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+button:hover {
+  animation: 3s linear infinite rotation;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
 }
 
 main {
@@ -27,10 +59,14 @@ main {
 }
 
 #countries div {
-  text-align: center;
+  width: 450px;
   border-style: solid;
-  border-radius: 50%;
+  border-radius: 1em;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
   padding: 2em;
+  display: flex;
 }
 
 li {
@@ -40,7 +76,7 @@ li {
 }
 
 .flags {
-  height: 1em;
+  height: 3em;
 }
 
 .blue {
