@@ -8,7 +8,38 @@ body {
 }
 header {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+}
+
+.search-button {
+    font-family: 'Bruno Ace SC', cursive;
+    font-weight: bold;
+    font-size: 20px;
+    color: #4E16E7;
+    width: 7em;
+    align-self: center;
+    padding: 1em;
+    border-radius: 2em;
+    background-color: #0CEAEC;
+    border-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button:hover {
+    animation: rotation 3s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
 }
 
 main {
@@ -28,10 +59,14 @@ main {
 }
 
 #countries div {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
     border-style: solid;
     padding: 2em;
-    border-radius: 50%;
+    border-radius: 1em;
+    width: 450px;
 }
 
 li {
@@ -40,7 +75,7 @@ li {
     flex-direction: column;
 }
 
-.flags {height: 1em}
+.flags {height: 3em}
 
 .blue {color: blue}
 .darkgreen {color: darkgreen}
