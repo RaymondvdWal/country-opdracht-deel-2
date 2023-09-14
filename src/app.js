@@ -13,8 +13,8 @@ async function fetchCountries() {
         data.sort((a,b)=>{ return a.population - b.population})
         console.log(data)
         for (let i = 0; i < response.data.length; i++) {
-            countriesOnScreen.innerHTML += `<div class="${regionColor(data[i].region)}"><li></li> <img class="flags" src="${data[i].flags.png}" alt="${data[i].flags.alt}"> <span class="${regionColor(data[i].region)}">${data[i].name}</span>
-            <li></li>Has a population of ${data[i].population} people</div>`
+            countriesOnScreen.innerHTML += `<div class="${regionColor(data[i].region)}"> <img class="flags" src="${data[i].flags.png}" alt="${data[i].flags.alt}"> ${data[i].name}
+            Has a population of ${data[i].population} people</div>`
         }
     } catch(e) {
         console.error(e);
